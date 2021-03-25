@@ -18,6 +18,7 @@ import imageD from './imges/d.png'
 
 
 class App extends React.Component {
+  
   myFunction(x) {
     x.classList.toggle("change");
     var y = document.getElementById("myDIV");
