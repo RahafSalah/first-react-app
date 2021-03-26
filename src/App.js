@@ -18,6 +18,7 @@ import imageD from "./imges/d.png";
 
 function Div2Element() {
   return (
+<<<<<<< HEAD
     <div className="div2">
       <div className="row">
         <img className="imge" src={imageA} />
@@ -62,6 +63,10 @@ function Div2Element() {
         </div>
       </div>
       <div className="vl"></div>
+=======
+    <div className="App">
+      
+>>>>>>> f3aecb012269bb17f5ab5766b79b9d0662202519
     </div>
   );
 }
