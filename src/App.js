@@ -165,6 +165,7 @@ function HiddenDivElement() {
 }
 
 class App extends React.Component {
+  
   myFunction() {
     document.getElementById("containerBtn").classList.toggle("change");
     var y = document.getElementById("hiddenDiv");
