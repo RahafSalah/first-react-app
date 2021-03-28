@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React from "react";
 import image1 from "./imges/img1.jpg";
 import image3 from "./imges/3.png";
@@ -61,7 +61,7 @@ function Div2Element() {
           </a>
         </div>
       </div>
-      <div className="vl"></div>
+      <div className="verticalLine"></div>
     </div>
   );
 }
@@ -71,18 +71,17 @@ function Div5Element() {
     <div className="divTop">
       <div className="div5">
         <h3>
-          <span style={{ color: "#adadaf" }}>Hello, i'm </span>
-          <span style={{ fontWeight: "lighter" }}>John</span>{" "}
-          <strong>Smith</strong>
+          <span className="wordHello">Hello, i'm </span>
+          <span className="wordJohn">John</span> <strong>Smith</strong>
         </h3>
 
-        <h5 style={{ color: "#adadaf", padding: "0px 30px 0px 30px" }}>
+        <h5>
           nec ullamcorper augue sagittis. Proin faucibus lorem nisl, Donec
           commodo leo est, quis eleifend urna pellentesque eget.
           <br />
         </h5>
 
-        <h6 style={{ color: "#4d4d4d" }}>
+        <h6>
           Proin scelerisque odio eu nisi viverra, nec ullamcorper gue{" "}
           <a className="contact2" href="#">
             contact me
@@ -165,7 +164,6 @@ function HiddenDivElement() {
 }
 
 class App extends React.Component {
-  
   myFunction() {
     document.getElementById("containerBtn").classList.toggle("change");
     var y = document.getElementById("hiddenDiv");
@@ -186,7 +184,6 @@ class App extends React.Component {
 
   render() {
     return (
-      
       <div className="App">
         <div id="hiddenDiv">
           <HiddenDivElement />
